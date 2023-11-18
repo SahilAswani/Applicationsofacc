@@ -1,0 +1,14 @@
+import numpy as np
+random_matrix = np.random.random((3,3))
+random_m2 = np.random.random((3,3))
+result=np.zeros([3,3])
+for i in range (len(random_matrix)):
+    for j in range (len(random_m2[0])):
+        for k in range (len(random_m2)):
+              result[i][j] = random_matrix[i][k]*random_m2[k][j]
+print ("1st Matrix:")
+print (random_matrix)
+print ("2nd Matrix:")
+print (random_m2)
+print ("Resultant Matrix:")
+print (result)
